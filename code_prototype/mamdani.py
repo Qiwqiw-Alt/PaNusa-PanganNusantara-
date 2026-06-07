@@ -61,11 +61,11 @@ class FuzzyMamdaniTanamanPangan:
         skor_dr = 1.0 if dr in data['drainase']['optimal'] else (0.5 if dr in data['drainase']['absolute'] else 0.0)
         skor_tk = 1.0 if tk in data['tekstur']['optimal'] else (0.5 if tk in data['tekstur']['absolute'] else 0.0)
         
-        return min(skor_dr, skor_tk)
+        return min(skor_dr, skor_tk) # Hukum Minimun Liebig
     
     # 5. Core Inference Engine (Mamdani Implikasi)
     def fuzzy_inference(self, suhu, hujan, ph, tinggi, drainase, tekstur):
-        basis = {
+        basis_pengetahuan = {
             'sorgum':   {'suhu': [8, 22, 35, 40],    'hujan': [300, 400, 600, 700],     'ph': [5.0, 5.5, 7.5, 8.0], 'tinggi': [0, 0, 2250, 2500]},
             'sagu':     {'suhu': [18, 25, 36, 40],   'hujan': [2100, 3000, 4500, 5800], 'ph': [4.5, 5.5, 6.5, 8.5], 'tinggi': [0, 0, 630, 700]},
             'gembili':  {'suhu': [17, 28, 32, 45],   'hujan': [600, 800, 2000, 8000],   'ph': [4.5, 5.5, 6.5, 8.5], 'tinggi': [0, 0, 810, 900]},
@@ -76,7 +76,7 @@ class FuzzyMamdaniTanamanPangan:
 
         activation_rules = {}
 
-        for tanaman, param in basis.items():
+        for tanaman, param in basis_pengetahuan.items():
             mu_suhu   = self.trapmf(suhu, param['suhu'])
             mu_hujan  = self.trapmf(hujan, param['hujan'])
             mu_ph     = self.trapmf(ph, param['ph'])
@@ -85,7 +85,7 @@ class FuzzyMamdaniTanamanPangan:
             # b. Ambil Skor Pembatas Kategorikal Tanah
             faktor_kategorikal = self.nilai_kategorikal(tanaman, drainase, tekstur)
 
-            # c. Operasi MIN Mamdani untuk Menentukan Derajat Aktivasi Rule
+            # c. Rule base untuk menentukan tingkat kecocokan lahan
             # Lahan dinilai SANGAT COCOK (Tinggi) jika semua parameter makro bernilai optimal
             skor_tinggi = min(mu_suhu, mu_hujan, mu_ph, mu_tinggi) * faktor_kategorikal
             
@@ -129,22 +129,23 @@ class FuzzyMamdaniTanamanPangan:
 
         return results
 
+def hitungKelayakan(sistem, suhu, hujan, ph, tinggi, drainase, tekstur):
+    rules = sistem.fuzzy_inference(suhu, hujan, ph, tinggi, drainase, tekstur)
+    hasil = sistem.defuzzify_cog(rules)
+    return hasil
+
+def tampilkanHasil(hasil):
+    for tanaman, skor in sorted(hasil.items(), key=lambda x: x[1], reverse=True):
+        print(f"Kelayakan {tanaman.upper()}: {skor:.2f}%")
 
 if __name__ == "__main__":
-    engine = FuzzyMamdaniTanamanPangan()
+    sistemFuzzy = FuzzyMamdaniTanamanPangan()
     
-    # KASUS UJI 1: Lahan kering NTT dengan tekstur medium dan drainase baik (Suhu tinggi, mdpl rendah)
-    print("=== PENGUJIAN SKENARIO LAHAN KHAS NTT ===")
-    rules_ntt = engine.fuzzy_inference(suhu=30, hujan=500, ph=6.5, tinggi=150, drainase="well", tekstur="medium")
-    hasil_ntt = engine.defuzzify_cog(rules_ntt)
+    # UJI COBA KASUS 1
+    hasil_ntt = hitungKelayakan(sistemFuzzy, suhu=30, hujan=500, ph=6.5, tinggi=150, drainase="well", tekstur="medium")
+    print(tampilkanHasil(hasil_ntt))
     
-    for tanaman, skor in sorted(hasil_ntt.items(), key=lambda x: x[1], reverse=True):
-        print(f"Kelayakan {tanaman.upper()}: {skor:.2f}%")
-        
-    # KASUS UJI 2: Lahan dataran tinggi basah dingin dengan drainase buruk
+    # UJI COBA KASUS 2
     print("\n=== PENGUJIAN SKENARIO LAHAN PEGUNUNGAN BASAH ===")
-    rules_gunung = engine.fuzzy_inference(suhu=14, hujan=1800, ph=5.8, tinggi=2100, drainase="poorly", tekstur="heavy")
-    hasil_gunung = engine.defuzzify_cog(rules_gunung)
-    
-    for tanaman, skor in sorted(hasil_gunung.items(), key=lambda x: x[1], reverse=True):
-        print(f"Kelayakan {tanaman.upper()}: {skor:.2f}%")
+    hasil_gunung = hitungKelayakan(sistemFuzzy, suhu=14, hujan=1800, ph=5.8, tinggi=2100, drainase="poorly", tekstur="heavy")
+    print(tampilkanHasil(hasil_gunung))
