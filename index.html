@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPK Pertanian: Fuzzy SAW & Liebig</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --bg-color: #f4f7f6;
+            --box-bg: #ffffff;
+            --text-main: #333333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: var(--box-bg);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        select, input[type="range"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .slider-value {
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            min-width: 45px;
+            text-align: center;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #1b5e20;
+        }
+        
+        /* Styles untuk Hasil */
+        #resultContainer {
+            display: none; /* Disembunyikan sebelum ada hasil */
+            padding: 25px;
+            border-radius: 10px;
+            color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        #resultContainer h2 { margin-top: 0; }
+        .crop-name { font-size: 1.2em; font-weight: bold; }
+        .score-display {
+            display: flex;
+            gap: 20px;
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        .score-item .label { display: block; font-size: 0.9em; opacity: 0.9; }
+        .score-item .value { font-size: 1.5em; font-weight: bold; }
+        .message { font-size: 1.1em; line-height: 1.5; }
+        .detail-stats { opacity: 0.8; }
+        
+        /* Warna berdasarkan kelas kesesuaian */
+        .status-s1 { background: linear-gradient(135deg, #4caf50, #2e7d32); color: white;}
+        .status-s2 { background: linear-gradient(135deg, #ff9800, #f57c00); color: white;}
+        .status-s3 { background: linear-gradient(135deg, #ffeb3b, #fbc02d); color: #333; }
+        .status-s3 .score-display { background: rgba(0,0,0,0.1); }
+        .status-n  { background: linear-gradient(135deg, #f44336, #c62828); color: white;}
+
+        @media (max-width: 600px) {
+            .score-display { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SPK Kesesuaian Lahan</h1>
+    <p class="subtitle">Metode: Fuzzy SAW + Hukum Minimum Liebig</p>
+
+    <div id="resultContainer">
+        <h2>Hasil Analisis Kesesuaian Lahan</h2>
+        <p class="crop-name">Tanaman Pilihan: <span id="resTanaman"></span></p>
+        <div class="score-display">
+            <div class="score-item">
+                <span class="label">Skor Akhir:</span>
+                <span class="value" id="resSkor"></span>
+            </div>
+            <div class="score-item">
+                <span class="label">Status:</span>
+                <span class="value" id="resStatus"></span>
+            </div>
+        </div>
+        <p class="message" id="resPesan"></p>
+        <hr>
+        <div class="detail-stats">
+            <small id="resDetail"></small>
+        </div>
+    </div>
+
+    <div class="card">
+        <form id="spkForm">
+            <div class="form-group">
+                <label for="tanaman">Pilih Tanaman yang Ingin Ditanam:</label>
+                <select name="tanaman" id="tanaman" required>
+                    <option value="Singkong">Singkong</option>
+                    <option value="Sorgum">Sorgum</option>
+                    <option value="Sagu">Sagu</option>
+                    <option value="Jelai">Jelai</option>
+                    <option value="Talas">Talas</option>
+                    <option value="Jagung">Jagung</option>
+                </select>
+            </div>
+
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+            <p><strong>Masukkan Nilai Rapor Lahan (0.00 = Sangat Buruk, 1.00 = Sangat Ideal)</strong></p>
+
+            <div class="form-group">
+                <label>Suhu Udara:</label>
+                <div class="slider-container">
+                    <input type="range" id="suhu" min="0" max="1" step="0.01" value="0.80" oninput="updateVal('val_suhu', this.value)">
+                    <span class="slider-value" id="val_suhu">0.80</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Curah Hujan:</label>
+                <div class="slider-container">
+                    <input type="range" id="hujan" min="0" max="1" step="0.01" value="0.80" oninput="updateVal('val_hujan', this.value)">
+                    <span class="slider-value" id="val_hujan">0.80</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>pH Tanah:</label>
+                <div class="slider-container">
+                    <input type="range" id="ph" min="0" max="1" step="0.01" value="0.80" oninput="updateVal('val_ph', this.value)">
+                    <span class="slider-value" id="val_ph">0.80</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Ketinggian Tempat (Altitude):</label>
+                <div class="slider-container">
+                    <input type="range" id="alt" min="0" max="1" step="0.01" value="0.80" oninput="updateVal('val_alt', this.value)">
+                    <span class="slider-value" id="val_alt">0.80</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Drainase Lahan:</label>
+                <div class="slider-container">
+                    <input type="range" id="drainase" min="0" max="1" step="0.01" value="0.80" oninput="updateVal('val_drainase', this.value)">
+                    <span class="slider-value" id="val_drainase">0.80</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Tekstur Tanah:</label>
+                <div class="slider-container">
+                    <input type="range" id="tekstur" min="0" max="1" step="0.01" value="0.80" oninput="updateVal('val_tekstur', this.value)">
+                    <span class="slider-value" id="val_tekstur">0.80</span>
+                </div>
+            </div>
+
+            <button type="submit">Cek Kesesuaian Lahan</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // 1. Matriks Bobot Tanaman
+    const bobotTanaman = {
+        "Singkong": {suhu: 0.15, hujan: 0.10, ph: 0.15, alt: 0.15, drainase: 0.25, tekstur: 0.20},
+        "Sorgum":   {suhu: 0.25, hujan: 0.15, ph: 0.15, alt: 0.15, drainase: 0.15, tekstur: 0.15},
+        "Sagu":     {suhu: 0.10, hujan: 0.30, ph: 0.15, alt: 0.10, drainase: 0.20, tekstur: 0.15},
+        "Jelai":    {suhu: 0.15, hujan: 0.15, ph: 0.15, alt: 0.25, drainase: 0.15, tekstur: 0.15},
+        "Talas":    {suhu: 0.10, hujan: 0.25, ph: 0.15, alt: 0.10, drainase: 0.20, tekstur: 0.20},
+        "Jagung":   {suhu: 0.20, hujan: 0.20, ph: 0.20, alt: 0.10, drainase: 0.15, tekstur: 0.15}
+    };
+
+    // Label untuk pesan (agar lebih enak dibaca)
+    const labelParameter = {
+        suhu: "Suhu Udara", hujan: "Curah Hujan", ph: "pH Tanah", 
+        alt: "Ketinggian Tempat", drainase: "Drainase Lahan", tekstur: "Tekstur Tanah"
+    };
+
+    // Update angka saat slider digeser
+    function updateVal(spanId, value) {
+        document.getElementById(spanId).innerText = parseFloat(value).toFixed(2);
+    }
+
+    // 2. Logika ketika tombol submit ditekan
+    document.getElementById('spkForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Mencegah halaman refresh
+
+        // Ambil data input
+        const tanaman = document.getElementById('tanaman').value;
+        const lahan = {
+            suhu: parseFloat(document.getElementById('suhu').value),
+            hujan: parseFloat(document.getElementById('hujan').value),
+            ph: parseFloat(document.getElementById('ph').value),
+            alt: parseFloat(document.getElementById('alt').value),
+            drainase: parseFloat(document.getElementById('drainase').value),
+            tekstur: parseFloat(document.getElementById('tekstur').value)
+        };
+
+        const bobot = bobotTanaman[tanaman];
+
+        // 3. Perhitungan Fuzzy SAW
+        let nilaiSAW = 0;
+        for (let param in bobot) {
+            nilaiSAW += (bobot[param] * lahan[param]);
+        }
+
+        // 4. Perhitungan Hukum Minimum Liebig
+        // Cari nilai paling kecil
+        let nilaiMinimum = 1.1; // Set lebih besar dari max (1.0)
+        let paramKritis = "";
+
+        for (let param in lahan) {
+            if (lahan[param] < nilaiMinimum) {
+                nilaiMinimum = lahan[param];
+                paramKritis = param;
+            }
+        }
+
+        // 5. Integrasi SAW dan Liebig (Alpha = 0.5)
+        const alpha = 0.5;
+        const skorAkhir = (alpha * nilaiSAW) + ((1 - alpha) * nilaiMinimum);
+
+        // 6. Penentuan Status & Kelas CSS
+        let status = "", kelasCSS = "", pesan = "";
+        const namaParamKritis = labelParameter[paramKritis];
+
+        if (skorAkhir >= 0.80) {
+            status = "Sangat Sesuai (S1)";
+            kelasCSS = "status-s1";
+            pesan = `Lahan ini sangat ideal dan cocok ditanami <strong>${tanaman}</strong>. Pertumbuhan diprediksi maksimal.`;
+        } else if (skorAkhir >= 0.60) {
+            status = "Cukup Sesuai (S2)";
+            kelasCSS = "status-s2";
+            pesan = `Lahan ini cukup cocok untuk <strong>${tanaman}</strong>. Hasil bisa maksimal dengan sedikit perbaikan lahan.`;
+        } else if (skorAkhir >= 0.40) {
+            status = "Sesuai Bersyarat (S3)";
+            kelasCSS = "status-s3";
+            pesan = `Lahan bisa digunakan untuk <strong>${tanaman}</strong>, namun butuh treatment ekstra. Faktor <strong>${namaParamKritis} (${nilaiMinimum.toFixed(2)})</strong> menjadi tantangan utama.`;
+        } else {
+            status = "Tidak Sesuai (N)";
+            kelasCSS = "status-n";
+            pesan = `Perhatian: Lahan ini <strong>TIDAK COCOK</strong> ditanami ${tanaman} karena parameter kritis (<strong>${namaParamKritis} = ${nilaiMinimum.toFixed(2)}</strong>) terlalu rendah dan berisiko gagal panen.`;
+        }
+
+        // 7. Tampilkan ke UI
+        const resultContainer = document.getElementById('resultContainer');
+        
+        // Reset class warna
+        resultContainer.className = '';
+        resultContainer.classList.add(kelasCSS);
+
+        // Masukkan data
+        document.getElementById('resTanaman').innerText = tanaman;
+        document.getElementById('resSkor').innerText = skorAkhir.toFixed(3);
+        document.getElementById('resStatus').innerText = status;
+        document.getElementById('resPesan').innerHTML = pesan;
+        document.getElementById('resDetail').innerText = `Detail Kalkulasi: Skor SAW Murni = ${nilaiSAW.toFixed(3)} | Faktor Minimum (Liebig) = ${nilaiMinimum.toFixed(2)}`;
+
+        // Munculkan kotaknya dengan scroll
+        resultContainer.style.display = 'block';
+        resultContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+</script>
+
+</body>
+</html>
