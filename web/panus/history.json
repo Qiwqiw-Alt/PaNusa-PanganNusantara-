@@ -1,0 +1,2708 @@
+[
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 34,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.18513323983171
+      },
+      {
+        "id": "talas",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.438848920863308
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782016214040,
+    "timestamp": "2026-06-21T04:30:14.040Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 25,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "talas",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782016215337,
+    "timestamp": "2026-06-21T04:30:15.337Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 25,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "talas",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782016216065,
+    "timestamp": "2026-06-21T04:30:16.065Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 25,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "talas",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782016227856,
+    "timestamp": "2026-06-21T04:30:27.856Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 25,
+      "hujan": 1200,
+      "ph": 7.1,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 30.537292726431936
+      },
+      {
+        "id": "gembili",
+        "persentase": 28.49660423955547
+      },
+      {
+        "id": "jelai",
+        "persentase": 26.493017953832986
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.185133239831714
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782016310667,
+    "timestamp": "2026-06-21T04:31:50.667Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 36.5,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 21.429816069699918
+      },
+      {
+        "id": "sorgum",
+        "persentase": 21.18513323983171
+      },
+      {
+        "id": "talas",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.670886075949362
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.296680497925312
+      }
+    ],
+    "id": 1782016584778,
+    "timestamp": "2026-06-21T04:36:24.778Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 36.5,
+      "hujan": 1200,
+      "ph": 4.9,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 31.036582594864786
+      },
+      {
+        "id": "talas",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.72222222222222
+      },
+      {
+        "id": "sorgum",
+        "persentase": 21.18513323983171
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.670886075949362
+      }
+    ],
+    "id": 1782016592130,
+    "timestamp": "2026-06-21T04:36:32.130Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 32.5,
+      "hujan": 1750,
+      "ph": 7.2,
+      "tinggi": 1040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 38.256746337702396
+      },
+      {
+        "id": "talas",
+        "persentase": 24.147361665317987
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.450725176645605
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.450725176645605
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782037782497,
+    "timestamp": "2026-06-21T10:29:42.497Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 25,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "talas",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046696881,
+    "timestamp": "2026-06-21T12:58:16.881Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 25,
+      "hujan": 1200,
+      "ph": 7,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 28.83205011092261
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.763565397076473
+      },
+      {
+        "id": "jelai",
+        "persentase": 26.493017953832986
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046701319,
+    "timestamp": "2026-06-21T12:58:21.319Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 25,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "talas",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046962955,
+    "timestamp": "2026-06-21T13:02:42.955Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046964574,
+    "timestamp": "2026-06-21T13:02:44.574Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046967499,
+    "timestamp": "2026-06-21T13:02:47.499Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046967937,
+    "timestamp": "2026-06-21T13:02:47.937Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046968410,
+    "timestamp": "2026-06-21T13:02:48.410Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 6.5,
+      "tinggi": 1320
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046970386,
+    "timestamp": "2026-06-21T13:02:50.386Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 6.5,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046971641,
+    "timestamp": "2026-06-21T13:02:51.641Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 6.5,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046971913,
+    "timestamp": "2026-06-21T13:02:51.913Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 6.5,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046972065,
+    "timestamp": "2026-06-21T13:02:52.065Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 6.5,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "talas",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046972209,
+    "timestamp": "2026-06-21T13:02:52.209Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 7.3,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 34.71570926143025
+      },
+      {
+        "id": "talas",
+        "persentase": 30.919350296804446
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782046974378,
+    "timestamp": "2026-06-21T13:02:54.378Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 30,
+      "hujan": 1950,
+      "ph": 7.6,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 29.35762584522914
+      },
+      {
+        "id": "talas",
+        "persentase": 29.350043086797633
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.670886075949362
+      }
+    ],
+    "id": 1782046981867,
+    "timestamp": "2026-06-21T13:03:01.867Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 35.5,
+      "hujan": 1950,
+      "ph": 7.6,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 26.264295676429523
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "talas",
+        "persentase": 21.466848160182664
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.670886075949362
+      }
+    ],
+    "id": 1782046984761,
+    "timestamp": "2026-06-21T13:03:04.761Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 35.5,
+      "hujan": 1950,
+      "ph": 7.6,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 26.264295676429523
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "talas",
+        "persentase": 21.466848160182664
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.670886075949362
+      }
+    ],
+    "id": 1782046986681,
+    "timestamp": "2026-06-21T13:03:06.681Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 23.5,
+      "hujan": 1950,
+      "ph": 7.6,
+      "tinggi": 2040
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 57.88412584715407
+      },
+      {
+        "id": "jelai",
+        "persentase": 25.48853370396112
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.670886075949362
+      }
+    ],
+    "id": 1782046988162,
+    "timestamp": "2026-06-21T13:03:08.162Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 28,
+      "hujan": 500,
+      "ph": 6.5,
+      "tinggi": 110
+    },
+    "results": [
+      {
+        "id": "sorgum",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782047029561,
+    "timestamp": "2026-06-21T13:03:49.561Z"
+  },
+  {
+    "email": "zidan@mail.com",
+    "inputs": {
+      "suhu": 18,
+      "hujan": 850,
+      "ph": 7,
+      "tinggi": 110
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 21.15441357265798
+      },
+      {
+        "id": "sorgum",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      }
+    ],
+    "id": 1782047119765,
+    "timestamp": "2026-06-21T13:05:19.765Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 32,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 500
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 21.876033057851245
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782050991055,
+    "timestamp": "2026-06-21T14:09:51.055Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 32,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 21.876033057851245
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782050994659,
+    "timestamp": "2026-06-21T14:09:54.659Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 32,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 21.876033057851245
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782050996514,
+    "timestamp": "2026-06-21T14:09:56.514Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 32,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 21.876033057851245
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782050997226,
+    "timestamp": "2026-06-21T14:09:57.226Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 26,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.18513323983171
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782050999970,
+    "timestamp": "2026-06-21T14:09:59.970Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 29,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "talas",
+        "persentase": 20.383874849578817
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051002721,
+    "timestamp": "2026-06-21T14:10:02.721Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 29,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "talas",
+        "persentase": 20.383874849578817
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051003025,
+    "timestamp": "2026-06-21T14:10:03.025Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 27,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.45072517664561
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051004583,
+    "timestamp": "2026-06-21T14:10:04.583Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 32.5,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.58445297504799
+      },
+      {
+        "id": "talas",
+        "persentase": 21.490084682173876
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051006074,
+    "timestamp": "2026-06-21T14:10:06.074Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 32.5,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.58445297504799
+      },
+      {
+        "id": "talas",
+        "persentase": 21.490084682173876
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051006430,
+    "timestamp": "2026-06-21T14:10:06.430Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 20,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "sagu",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.383874849578817
+      },
+      {
+        "id": "talas",
+        "persentase": 20.130598971992033
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051007612,
+    "timestamp": "2026-06-21T14:10:07.612Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 22.5,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.49008468217388
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.296680497925312
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051008961,
+    "timestamp": "2026-06-21T14:10:08.961Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 27,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.45072517664561
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051010881,
+    "timestamp": "2026-06-21T14:10:10.881Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 16,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.018590845180444
+      },
+      {
+        "id": "sorgum",
+        "persentase": 21.876033057851245
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051012021,
+    "timestamp": "2026-06-21T14:10:12.021Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 16,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.018590845180444
+      },
+      {
+        "id": "sorgum",
+        "persentase": 21.876033057851245
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051012189,
+    "timestamp": "2026-06-21T14:10:12.189Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 18,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "sorgum",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "talas",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051015099,
+    "timestamp": "2026-06-21T14:10:15.099Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 18,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "sorgum",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "talas",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051015258,
+    "timestamp": "2026-06-21T14:10:15.258Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 18,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "sorgum",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "talas",
+        "persentase": 21.04331147135257
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051015458,
+    "timestamp": "2026-06-21T14:10:15.458Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 21.5,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "sagu",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.769820971867013
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.054573952693072
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.86844708209693
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051017563,
+    "timestamp": "2026-06-21T14:10:17.563Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 21.5,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "sagu",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.769820971867013
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.054573952693072
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.86844708209693
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051017702,
+    "timestamp": "2026-06-21T14:10:17.702Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 21.5,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "sagu",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.769820971867013
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.054573952693072
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.86844708209693
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051017911,
+    "timestamp": "2026-06-21T14:10:17.911Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 41.5,
+      "hujan": 750,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 21.024777006937573
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051019995,
+    "timestamp": "2026-06-21T14:10:19.995Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 23.5,
+      "hujan": 850,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 21.76982097186703
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.74197983501375
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.54369682907967
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051026138,
+    "timestamp": "2026-06-21T14:10:26.138Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 25.5,
+      "hujan": 850,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 21.055432372505546
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.808328411104544
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051028788,
+    "timestamp": "2026-06-21T14:10:28.788Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 23,
+      "hujan": 850,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 22.018590845180444
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.111220666535207
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.419491525423727
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "talas",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051033196,
+    "timestamp": "2026-06-21T14:10:33.196Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 20.5,
+      "hujan": 850,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "sagu",
+        "persentase": 21.490084682173876
+      },
+      {
+        "id": "gembili",
+        "persentase": 21.282702069504094
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.209107224842445
+      },
+      {
+        "id": "talas",
+        "persentase": 19.91415677923132
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.817869415807554
+      }
+    ],
+    "id": 1782051035258,
+    "timestamp": "2026-06-21T14:10:35.258Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 31.5,
+      "hujan": 850,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.856115107913695
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051065706,
+    "timestamp": "2026-06-21T14:11:05.706Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 31.5,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.856115107913695
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051072106,
+    "timestamp": "2026-06-21T14:11:12.106Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 31.5,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 170
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.856115107913695
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051072714,
+    "timestamp": "2026-06-21T14:11:12.714Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 31.5,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 620
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.856115107913695
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051078083,
+    "timestamp": "2026-06-21T14:11:18.083Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 31.5,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 620
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.856115107913695
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051078561,
+    "timestamp": "2026-06-21T14:11:18.561Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 31.5,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 1000
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.856115107913695
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051080157,
+    "timestamp": "2026-06-21T14:11:20.157Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 31.5,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 1200
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 22.271045328399634
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.856115107913695
+      },
+      {
+        "id": "sorgum",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "sagu",
+        "persentase": 19.7027027027027
+      },
+      {
+        "id": "gembili",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051081963,
+    "timestamp": "2026-06-21T14:11:21.963Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 1200,
+      "ph": 6.5,
+      "tinggi": 1200
+    },
+    "results": [
+      {
+        "id": "talas",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      },
+      {
+        "id": "jelai",
+        "persentase": 20.670886075949362
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.577815506508216
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.38387484957882
+      }
+    ],
+    "id": 1782051100355,
+    "timestamp": "2026-06-21T14:11:40.355Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 1200,
+      "ph": 7,
+      "tinggi": 1200
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 33.351219512195016
+      },
+      {
+        "id": "talas",
+        "persentase": 26.491563800567327
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "gembili",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      }
+    ],
+    "id": 1782051104597,
+    "timestamp": "2026-06-21T14:11:44.597Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 1200,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 33.351219512195016
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 26.491563800567327
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      }
+    ],
+    "id": 1782051109587,
+    "timestamp": "2026-06-21T14:11:49.587Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 1200,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 33.351219512195016
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 26.491563800567327
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      }
+    ],
+    "id": 1782051110033,
+    "timestamp": "2026-06-21T14:11:50.033Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 1200,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 33.351219512195016
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 26.491563800567327
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      }
+    ],
+    "id": 1782051110195,
+    "timestamp": "2026-06-21T14:11:50.196Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 850,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 21.15441357265798
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      }
+    ],
+    "id": 1782051116617,
+    "timestamp": "2026-06-21T14:11:56.617Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 1150,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 30.240666998506768
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 26.491563800567327
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      }
+    ],
+    "id": 1782051120209,
+    "timestamp": "2026-06-21T14:12:00.209Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 900,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 21.15441357265798
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      }
+    ],
+    "id": 1782051128481,
+    "timestamp": "2026-06-21T14:12:08.481Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 1000,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 21.15441357265798
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      },
+      {
+        "id": "jelai",
+        "persentase": 19.7027027027027
+      }
+    ],
+    "id": 1782051130993,
+    "timestamp": "2026-06-21T14:12:10.993Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19,
+      "hujan": 850,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 21.15441357265798
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.74197983501375
+      }
+    ],
+    "id": 1782051133681,
+    "timestamp": "2026-06-21T14:12:13.681Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 20.5,
+      "hujan": 850,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 28.24367803866301
+      },
+      {
+        "id": "jelai",
+        "persentase": 21.615691489361733
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.490084682173876
+      },
+      {
+        "id": "talas",
+        "persentase": 21.15441357265798
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.209107224842445
+      }
+    ],
+    "id": 1782051136106,
+    "timestamp": "2026-06-21T14:12:16.106Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 7,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 27.535498073747938
+      },
+      {
+        "id": "talas",
+        "persentase": 21.15441357265798
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.925224327018945
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      }
+    ],
+    "id": 1782051138313,
+    "timestamp": "2026-06-21T14:12:18.313Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 6.8,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 25.129524812425977
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.74197983501375
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      },
+      {
+        "id": "talas",
+        "persentase": 20.551020408163264
+      }
+    ],
+    "id": 1782051141373,
+    "timestamp": "2026-06-21T14:12:21.373Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 6.8,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 25.129524812425977
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.74197983501375
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      },
+      {
+        "id": "talas",
+        "persentase": 20.551020408163264
+      }
+    ],
+    "id": 1782051141978,
+    "timestamp": "2026-06-21T14:12:21.978Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 6.8,
+      "tinggi": 280
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 25.129524812425977
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.74197983501375
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      },
+      {
+        "id": "talas",
+        "persentase": 20.551020408163264
+      }
+    ],
+    "id": 1782051142139,
+    "timestamp": "2026-06-21T14:12:22.139Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 6.8,
+      "tinggi": 380
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 25.129524812425977
+      },
+      {
+        "id": "sagu",
+        "persentase": 20.74197983501375
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      },
+      {
+        "id": "talas",
+        "persentase": 20.551020408163264
+      }
+    ],
+    "id": 1782051144113,
+    "timestamp": "2026-06-21T14:12:24.113Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 7.1,
+      "tinggi": 380
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 29.003331482509743
+      },
+      {
+        "id": "talas",
+        "persentase": 21.46684816018266
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.185133239831714
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      }
+    ],
+    "id": 1782051146452,
+    "timestamp": "2026-06-21T14:12:26.452Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 7.1,
+      "tinggi": 380
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 29.003331482509743
+      },
+      {
+        "id": "talas",
+        "persentase": 21.46684816018266
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.185133239831714
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      }
+    ],
+    "id": 1782051147027,
+    "timestamp": "2026-06-21T14:12:27.027Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 7.1,
+      "tinggi": 380
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 29.003331482509743
+      },
+      {
+        "id": "talas",
+        "persentase": 21.46684816018266
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.185133239831714
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      }
+    ],
+    "id": 1782051147179,
+    "timestamp": "2026-06-21T14:12:27.179Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 7.3,
+      "tinggi": 380
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 31.88636363636366
+      },
+      {
+        "id": "talas",
+        "persentase": 22.10811651290556
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      }
+    ],
+    "id": 1782051148749,
+    "timestamp": "2026-06-21T14:12:28.749Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 7.3,
+      "tinggi": 380
+    },
+    "results": [
+      {
+        "id": "jelai",
+        "persentase": 80.29729729729729
+      },
+      {
+        "id": "gembili",
+        "persentase": 31.88636363636366
+      },
+      {
+        "id": "talas",
+        "persentase": 22.10811651290556
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.722222222222225
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.56151629350476
+      }
+    ],
+    "id": 1782051149154,
+    "timestamp": "2026-06-21T14:12:29.154Z"
+  },
+  {
+    "email": "ihsan@mail.com",
+    "inputs": {
+      "suhu": 19.5,
+      "hujan": 850,
+      "ph": 7.6,
+      "tinggi": 380
+    },
+    "results": [
+      {
+        "id": "gembili",
+        "persentase": 36.128993729471475
+      },
+      {
+        "id": "jelai",
+        "persentase": 33.35121951219495
+      },
+      {
+        "id": "sagu",
+        "persentase": 21.99402730375426
+      },
+      {
+        "id": "talas",
+        "persentase": 21.466848160182664
+      },
+      {
+        "id": "sorgum",
+        "persentase": 20.670886075949362
+      }
+    ],
+    "id": 1782051150818,
+    "timestamp": "2026-06-21T14:12:30.818Z"
+  }
+]

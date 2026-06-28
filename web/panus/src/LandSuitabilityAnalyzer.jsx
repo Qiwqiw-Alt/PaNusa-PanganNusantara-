@@ -152,16 +152,33 @@ function FaktorBadge({ label, icon: Icon, derajat }) {
   );
 }
 
-export default function LandSuitabilityAnalyzer() {
+export default function LandSuitabilityAnalyzer({ userSession }) {
   const [suhu, setSuhu] = useState(25);
   const [hujan, setHujan] = useState(1200);
   const [ph, setPh] = useState(6.5);
   const [tinggi, setTinggi] = useState(500);
   const [hasil, setHasil] = useState(null);
 
-  const handleAnalisis = () => {
+  const handleAnalisis = async () => {
     const ranking = hitungKesesuaianLahan(suhu, hujan, ph, tinggi);
     setHasil(ranking);
+
+    // Simpan history ke API jika ada sesi user
+    if (userSession && userSession.email) {
+      try {
+        await fetch('/api/history', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: userSession.email,
+            inputs: { suhu, hujan, ph, tinggi },
+            results: ranking // Menyimpan semua urutan tanaman
+          })
+        });
+      } catch (err) {
+        console.error("Gagal menyimpan riwayat:", err);
+      }
+    }
   };
 
   const handleReset = () => setHasil(null);

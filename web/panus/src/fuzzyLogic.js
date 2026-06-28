@@ -1,8 +1,10 @@
 // fuzzyLogic.js
 // Konversi dari FuzzyMamdaniTanamanPangan (Python) ke JavaScript.
-// Rule base 81 aturan/tanaman digenerate otomatis berdasarkan
-// Hukum Minimum Liebig: skor output rule = level TERENDAH di antara
-// keempat variabel input (suhu, hujan, pH, ketinggian).
+// Rule base 81 aturan/tanaman diambil LANGSUNG dari
+// "_Rule Base Mamdani (2).xlsx" (sama persis seperti yang dibaca kode
+// Python), bukan digenerate dari Hukum Liebig murni — karena rule base
+// asli punya beberapa pengecualian manual berdasarkan karakteristik
+// khusus tiap tanaman (lihat RULE_BASE di bawah).
 
 // ---------- Fungsi keanggotaan dasar ----------
 
@@ -99,22 +101,93 @@ function mfOutputTinggi(x) {
   return trapmf(x, [50, 75, 100, 100]);
 }
 
-// ---------- Rule base via Hukum Minimum Liebig (81 kombinasi) ----------
+// ---------- Rule base asli (dari _Rule Base Mamdani (2).xlsx) ----------
+// Setiap string 5 karakter = [Suhu][Hujan][pH][Ketinggian][Output]
+// R = Rendah, S = Sedang, T = Tinggi.
+// Sebagian besar baris memang murni Hukum Minimum Liebig (output = level
+// terendah dari 4 input), TAPI ada pengecualian manual di beberapa baris
+// per tanaman (mis. 3 faktor "Tinggi" + 1 faktor "Sedang" -> tetap
+// "SEDANG", bukan dijatuhkan sesuai faktor pembatas murni). Tabel di
+// bawah ini sudah termasuk semua pengecualian tersebut, sama persis
+// dengan yang dibaca kode Python dari Excel.
 
-const LEVELS = ["rendah", "sedang", "tinggi"];
-const LEVEL_ORDINAL = { rendah: 0, sedang: 1, tinggi: 2 };
-const ORDINAL_OUTPUT = ["RENDAH", "SEDANG", "TINGGI"];
+const LEVEL_CODE = { R: "rendah", S: "sedang", T: "tinggi" };
+const OUTPUT_CODE = { R: "RENDAH", S: "SEDANG", T: "TINGGI" };
 
-function outputDariLiebig(lSuhu, lHujan, lPh, lTinggi) {
-  // Faktor pembatas (paling minim) yang menentukan hasil keseluruhan
-  const minOrdinal = Math.min(
-    LEVEL_ORDINAL[lSuhu],
-    LEVEL_ORDINAL[lHujan],
-    LEVEL_ORDINAL[lPh],
-    LEVEL_ORDINAL[lTinggi]
-  );
-  return ORDINAL_OUTPUT[minOrdinal];
+const RULE_BASE_RAW = {
+  sorgum: [
+    "TTTTT","TTTSS","TTTRR","TTSTS","TTSSS","TTSRR","TTRTR","TTRSR","TTRRR",
+    "TSTTT","TSTSS","TSTRR","TSSTS","TSSSS","TSSRR","TSRTR","TSRSR","TSRRR",
+    "TRTTR","TRTSR","TRTRR","TRSTR","TRSSR","TRSRR","TRRTR","TRRSR","TRRRR",
+    "STTTS","STTSS","STTRR","STSTS","STSSS","STSRR","STRTR","STRSR","STRRR",
+    "SSTTS","SSTSS","SSTRR","SSSTS","SSSSR","SSSRR","SSRTR","SSRSR","SSRRR",
+    "SRTTR","SRTSR","SRTRR","SRSTR","SRSSR","SRSRR","SRRTR","SRRSR","SRRRR",
+    "RTTTR","RTTSR","RTTRR","RTSTR","RTSSR","RTSRR","RTRTR","RTRSR","RTRRR",
+    "RSTTR","RSTSR","RSTRR","RSSTR","RSSSR","RSSRR","RSRTR","RSRSR","RSRRR",
+    "RRTTR","RRTSR","RRTRR","RRSTR","RRSSR","RRSRR","RRRTR","RRRSR","RRRRR",
+  ],
+  sagu: [
+    "TTTTT","TTTSR","TTTRR","TTSTT","TTSSR","TTSRR","TTRTR","TTRSR","TTRRR",
+    "TSTTS","TSTSR","TSTRR","TSSTS","TSSSR","TSSRR","TSRTR","TSRSR","TSRRR",
+    "TRTTR","TRTSR","TRTRR","TRSTR","TRSSR","TRSRR","TRRTR","TRRSR","TRRRR",
+    "STTTS","STTSR","STTRR","STSTS","STSSR","STSRR","STRTR","STRSR","STRRR",
+    "SSTTS","SSTSR","SSTRR","SSSTS","SSSSR","SSSRR","SSRTR","SSRSR","SSRRR",
+    "SRTTR","SRTSR","SRTRR","SRSTR","SRSSR","SRSRR","SRRTR","SRRSR","SRRRR",
+    "RTTTR","RTTSR","RTTRR","RTSTR","RTSSR","RTSRR","RTRTR","RTRSR","RTRRR",
+    "RSTTR","RSTSR","RSTRR","RSSTR","RSSSR","RSSRR","RSRTR","RSRSR","RSRRR",
+    "RRTTR","RRTSR","RRTRR","RRSTR","RRSSR","RRSRR","RRRTR","RRRSR","RRRRR",
+  ],
+  gembili: [
+    "TTTTT","TTTSS","TTTRR","TTSTS","TTSSS","TTSRR","TTRTR","TTRSR","TTRRR",
+    "TSTTT","TSTSS","TSTRR","TSSTS","TSSSS","TSSRR","TSRTR","TSRSR","TSRRR",
+    "TRTTR","TRTSR","TRTRR","TRSTR","TRSSR","TRSRR","TRRTR","TRRSR","TRRRR",
+    "STTTS","STTSS","STTRR","STSTS","STSSS","STSRR","STRTR","STRSR","STRRR",
+    "SSTTS","SSTSS","SSTRR","SSSTS","SSSSR","SSSRR","SSRTR","SSRSR","SSRRR",
+    "SRTTR","SRTSR","SRTRR","SRSTR","SRSSR","SRSRR","SRRTR","SRRSR","SRRRR",
+    "RTTTR","RTTSR","RTTRR","RTSTR","RTSSR","RTSRR","RTRTR","RTRSR","RTRRR",
+    "RSTTR","RSTSR","RSTRR","RSSTR","RSSSR","RSSRR","RSRTR","RSRSR","RSRRR",
+    "RRTTR","RRTSR","RRTRR","RRSTR","RRSSR","RRSRR","RRRTR","RRRSR","RRRRR",
+  ],
+  jelai: [
+    "TTTTT","TTTST","TTTRR","TTSTT","TTSSS","TTSRR","TTRTR","TTRSR","TTRRR",
+    "TSTTT","TSTSS","TSTRR","TSSTS","TSSSS","TSSRR","TSRTR","TSRSR","TSRRR",
+    "TRTTR","TRTSR","TRTRR","TRSTR","TRSSR","TRSRR","TRRTR","TRRSR","TRRRR",
+    "STTTT","STTSS","STTRR","STSTS","STSSS","STSRR","STRTR","STRSR","STRRR",
+    "SSTTS","SSTSS","SSTRR","SSSTS","SSSSR","SSSRR","SSRTR","SSRSR","SSRRR",
+    "SRTTR","SRTSR","SRTRR","SRSTR","SRSSR","SRSRR","SRRTR","SRRSR","SRRRR",
+    "RTTTR","RTTSR","RTTRR","RTSTR","RTSSR","RTSRR","RTRTR","RTRSR","RTRRR",
+    "RSTTR","RSTSR","RSTRR","RSSTR","RSSSR","RSSRR","RSRTR","RSRSR","RSRRR",
+    "RRTTR","RRTSR","RRTRR","RRSTR","RRSSR","RRSRR","RRRTR","RRRSR","RRRRR",
+  ],
+  talas: [
+    "TTTTT","TTTST","TTTRR","TTSTT","TTSSS","TTSRR","TTRTR","TTRSR","TTRRR",
+    "TSTTT","TSTSS","TSTRR","TSSTS","TSSSS","TSSRR","TSRTR","TSRSR","TSRRR",
+    "TRTTR","TRTSR","TRTRR","TRSTR","TRSSR","TRSRR","TRRTR","TRRSR","TRRRR",
+    "STTTT","STTSS","STTRR","STSTS","STSSS","STSRR","STRTR","STRSR","STRRR",
+    "SSTTS","SSTSS","SSTRR","SSSTS","SSSSS","SSSRR","SSRTR","SSRSR","SSRRR",
+    "SRTTR","SRTSR","SRTRR","SRSTR","SRSSR","SRSRR","SRRTR","SRRSR","SRRRR",
+    "RTTTR","RTTSR","RTTRR","RTSTR","RTSSR","RTSRR","RTRTR","RTRSR","RTRRR",
+    "RSTTR","RSTSR","RSTRR","RSSTR","RSSSR","RSSRR","RSRTR","RSRSR","RSRRR",
+    "RRTTR","RRTSR","RRTRR","RRSTR","RRSSR","RRSRR","RRRTR","RRRSR","RRRRR",
+  ],
+};
+
+// Parse string ringkas -> { suhu, hujan, ph, ketinggian, output }
+function parseRuleBase(rawMap) {
+  const parsed = {};
+  for (const [tanaman, rows] of Object.entries(rawMap)) {
+    parsed[tanaman] = rows.map((r) => ({
+      suhu: LEVEL_CODE[r[0]],
+      hujan: LEVEL_CODE[r[1]],
+      ph: LEVEL_CODE[r[2]],
+      ketinggian: LEVEL_CODE[r[3]],
+      output: OUTPUT_CODE[r[4]],
+    }));
+  }
+  return parsed;
 }
+
+export const ruleBase = parseRuleBase(RULE_BASE_RAW);
 
 // ---------- Inferensi fuzzy (Mamdani, max-min) ----------
 
@@ -131,25 +204,19 @@ export function fuzzyInference(suhu, hujan, ph, tinggi) {
     let skorSedang = 0.0;
     let skorTinggi = 0.0;
 
-    for (const lSuhu of LEVELS) {
-      for (const lHujan of LEVELS) {
-        for (const lPh of LEVELS) {
-          for (const lTinggi of LEVELS) {
-            const alpha = Math.min(
-              fSuhu[lSuhu],
-              fHujan[lHujan],
-              fPh[lPh],
-              fTinggi[lTinggi]
-            );
-            if (alpha <= 0) continue;
+    const rules = ruleBase[tanaman] || [];
+    for (const rule of rules) {
+      const alpha = Math.min(
+        fSuhu[rule.suhu] ?? 0,
+        fHujan[rule.hujan] ?? 0,
+        fPh[rule.ph] ?? 0,
+        fTinggi[rule.ketinggian] ?? 0
+      );
+      if (alpha <= 0) continue;
 
-            const output = outputDariLiebig(lSuhu, lHujan, lPh, lTinggi);
-            if (output === "RENDAH") skorRendah = Math.max(skorRendah, alpha);
-            else if (output === "SEDANG") skorSedang = Math.max(skorSedang, alpha);
-            else skorTinggi = Math.max(skorTinggi, alpha);
-          }
-        }
-      }
+      if (rule.output === "RENDAH") skorRendah = Math.max(skorRendah, alpha);
+      else if (rule.output === "SEDANG") skorSedang = Math.max(skorSedang, alpha);
+      else if (rule.output === "TINGGI") skorTinggi = Math.max(skorTinggi, alpha);
     }
 
     activationRules[tanaman] = {
